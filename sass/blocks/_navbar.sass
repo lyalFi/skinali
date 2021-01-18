@@ -1,0 +1,77 @@
+.navbar 
+    position: fixed //чтобы приклеить шапку при прокрутке
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #ffffff //без этого, она прозрачная
+    z-index: 99
+    &-wrap
+        display: flex
+        align-items: center //центр по вертикали
+        justify-content: space-between
+        min-height: 80px 
+    &__mobile, &__stationary
+        text-align: right //по правому краю
+    &__phone
+        display: block
+        margin-bottom: 5px
+        font-size: 19px
+        +bold
+        text-decoration: none //чтобы не горела ссылка
+        color: #262626
+    &__small-text
+        display: block
+        font-size: 14px
+        color: #7b7b79
+        text-decoration: none
+
+.menu
+    position: fixed
+    z-index: 0 //чтобы скрыть меню
+    top: 80px
+    width: 100%
+    left: 0
+    padding: 16px 0
+    color: #ffffff
+    background-color: #507fe1
+    transform: translateY(-100%) //чтобы заехал в меню
+    &_active
+        transform: translateY(0)
+    &__nav
+        display: flex
+        align-items: center
+        justify-content: space-around
+    &__link
+        text-decoration: none
+        font-size: 17px
+        color: #ffffff
+        text-transform: uppercase
+    &-button
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center 
+        background-color: transparent //прозрачный
+        border: none
+        border-right: 1px solid rgba(#510bba, 0.1)
+        border-left: 1px solid rgba(#510bba, 0.1)
+        height: 80px
+        width: 70px
+        &__line
+            display: block
+            width: 20px
+            height: 3px
+            background-color: #89a9eb
+            margin: 2px 0
+
+.logo
+    &__text
+        display: block //чтобы на всю строку, перенос отступов
+        margin-bottom: 5px //отступ сверху, сокращаем в 2, т.к. есть уже авто отступ
+        font-size: 18px
+        text-transform: uppercase //все в верхний регистр
+        +bold //нужен жирный шрифт
+    &__description
+        display: block
+        font-size: 14px
+        color: #7b7b79

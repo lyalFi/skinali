@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фабрика скинали</title>
+    <link rel="stylesheet" href="css/normalize (2).css"> <!--обнуление стилей-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="menu_active"> <!--всплывающее меню из 3 полосочек. через одно _ потому что модификатор-->
+            <div class="container">
+                <nav class="menu__nav"> <!--nav-навигация-->
+                    <a href="#" class="menu__link">Главная</a>
+                    <a href="#" class="menu__link">Продукция</a>
+                    <a href="#" class="menu__link">Примеры работ</a>
+                    <a href="#" class="menu__link">Примерка изображений</a>
+                    <a href="#" class="menu__link">Стоимость дилерам</a>
+                    <a href="#" class="menu__link">О скинали</a>
+                </nav>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-wrap">
+                    <button class="menu-button navbar__menu-button"> <!--три полосочки-->
+                        <span class="menu-button__line"></span>
+                        <span class="menu-button__line"></span>
+                        <span class="menu-button__line"></span>
+                    </button>
+                    <div class="logo navbar__logo">
+                        <strong class="logo__text">Фабрика скинали №1</strong> <!--для акцентирования текста, жирный-->
+                        <span class="logo__description">ведущий производитель скинали</span> <!--определение-->
+                    </div>
+                    <div class="navbar__mobile"> <!--мобильный телефон-->
+                        <a class="navbar__phone" href="tel: +79059278441">+7 905 927 84-41</a>
+                        <span class="navbar__working-time navbar__small-text">без выходных 9-21</span>
+                    </div>
+                    <div class="navbar__stationary"> <!--стационарный телефон-->
+                        <a class="navbar__phone" href="tel: +79619798035">+7 961 979 80-35</a>
+                        <a class="navbar__email navbar__small-text" href="mailto:info@mail.ru">info@mail.ru</a>
+                    </div>
+                    <button class="button-o navbar__button">Получить консультацию</button> <!--пустая кнопка, элемент для редактирования внешней  геометрии-->
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="container">
+                <h1 class="hero__titel">Гарантия <br> минимальной цены <br> на скинали</h1>
+                <span class="hero__subtitle">от 3000 р/м2</span>
+                <button class="button hero__button">Заказать скинали</button>
+            </div>
+        </div>
+    </header>
     
 </body>
 </html>
