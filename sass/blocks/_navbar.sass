@@ -9,7 +9,6 @@
         display: flex
         align-items: center //центр по вертикали
         justify-content: space-between
-        min-height: 80px 
     &__mobile, &__stationary
         text-align: right //по правому краю
     &__phone
@@ -34,7 +33,7 @@
     padding: 16px 0
     color: #ffffff
     background-color: #507fe1
-    transform: translateY(-100%) //чтобы заехал в меню
+    transform: translateY(-200%) //чтобы заехал в меню
     &_active
         transform: translateY(0)
     &__nav
@@ -75,3 +74,19 @@
         display: block
         font-size: 14px
         color: #7b7b79
+
+@media (max-width: 991px) //скрыть на таких устройствах
+    .navbar
+        &__mobile, &__stationary
+            display: none
+@media (max-width: 576px) //скрыть на таких устройствах
+    .logo
+        display: none
+    .menu 
+        top: 60px
+        &-button
+            height: 60px
+        &__nav
+            flex-direction: column
+        &__link
+            margin-bottom: 20px
